@@ -20,9 +20,15 @@
         Manage recipe <span class="caret"></span>
       </button>
       <ul class="dropdown-menu">
-        <li><a href="#" (click)="addOnShoppingList()">To Shopping List</a></li>
-        <li><a href="#">Edit Recipe</a></li>
-        <li><a href="#">deete Recipe</a></li>
+        <li>
+          <a style="cursor: pointer" (click)="addOnShoppingList()"
+            >To Shopping List</a
+          >
+        </li>
+        <li>
+          <a [routerLink]="['edit']" style="cursor: pointer">Edit Recipe</a>
+        </li>
+        <li><a style="cursor: pointer">deete Recipe</a></li>
       </ul>
     </div>
   </div>
